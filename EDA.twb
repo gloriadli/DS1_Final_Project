@@ -1,0 +1,792 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0721.1350                               -->
+<workbook original-version='18.1' source-build='2020.2.4 (20202.20.0721.1350)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='df_19' inline='true' name='federated.07gwikz1px4vus12k7ifm1x5802b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='df_19' name='textscan.1cf2rbt1nd8tp41cw2ruc1hvcirb'>
+            <connection class='textscan' directory='/Users/gloriali/Desktop/Georgetown/Data Science I/Final_Project/Git' filename='df_19.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1cf2rbt1nd8tp41cw2ruc1hvcirb' name='df_19.csv' table='[df_19#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='real' name='total_mwh' ordinal='2' />
+            <column datatype='real' name='total_cust' ordinal='3' />
+            <column datatype='real' name='no' ordinal='4' />
+            <column datatype='string' name='type' ordinal='5' />
+            <column datatype='real' name='saidi_nomed' ordinal='6' />
+            <column datatype='string' name='saifi_nomed' ordinal='7' />
+            <column datatype='string' name='caidi_nomed' ordinal='8' />
+            <column datatype='real' name='circuits' ordinal='9' />
+            <column datatype='real' name='voltage' ordinal='10' />
+            <column datatype='string' name='nerc' ordinal='11' />
+            <column datatype='real' name='gen_mwh' ordinal='12' />
+            <column datatype='real' name='purchase_mwh' ordinal='13' />
+            <column datatype='string' name='ba' ordinal='14' />
+            <column datatype='real' name='pv_mwh' ordinal='15' />
+            <column datatype='real' name='wind_mwh' ordinal='16' />
+            <column datatype='real' name='nm_mwh' ordinal='17' />
+            <column datatype='real' name='ee_mwh' ordinal='18' />
+            <column datatype='real' name='dem_res_customers' ordinal='19' />
+            <column datatype='real' name='dem_res_mwh' ordinal='20' />
+            <column datatype='real' name='pv_pct' ordinal='21' />
+            <column datatype='real' name='wind_pct' ordinal='22' />
+            <column datatype='real' name='nm_pct' ordinal='23' />
+            <column datatype='real' name='ee_pct' ordinal='24' />
+            <column datatype='real' name='dem_res_pct' ordinal='25' />
+            <column datatype='real' name='dem_res_cust_pct' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1cf2rbt1nd8tp41cw2ruc1hvcirb' name='df_19.csv' table='[df_19#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='real' name='total_mwh' ordinal='2' />
+            <column datatype='real' name='total_cust' ordinal='3' />
+            <column datatype='real' name='no' ordinal='4' />
+            <column datatype='string' name='type' ordinal='5' />
+            <column datatype='real' name='saidi_nomed' ordinal='6' />
+            <column datatype='string' name='saifi_nomed' ordinal='7' />
+            <column datatype='string' name='caidi_nomed' ordinal='8' />
+            <column datatype='real' name='circuits' ordinal='9' />
+            <column datatype='real' name='voltage' ordinal='10' />
+            <column datatype='string' name='nerc' ordinal='11' />
+            <column datatype='real' name='gen_mwh' ordinal='12' />
+            <column datatype='real' name='purchase_mwh' ordinal='13' />
+            <column datatype='string' name='ba' ordinal='14' />
+            <column datatype='real' name='pv_mwh' ordinal='15' />
+            <column datatype='real' name='wind_mwh' ordinal='16' />
+            <column datatype='real' name='nm_mwh' ordinal='17' />
+            <column datatype='real' name='ee_mwh' ordinal='18' />
+            <column datatype='real' name='dem_res_customers' ordinal='19' />
+            <column datatype='real' name='dem_res_mwh' ordinal='20' />
+            <column datatype='real' name='pv_pct' ordinal='21' />
+            <column datatype='real' name='wind_pct' ordinal='22' />
+            <column datatype='real' name='nm_pct' ordinal='23' />
+            <column datatype='real' name='ee_pct' ordinal='24' />
+            <column datatype='real' name='dem_res_pct' ordinal='25' />
+            <column datatype='real' name='dem_res_cust_pct' ordinal='26' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_mwh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_mwh]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>total_mwh</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cust</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_cust]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>total_cust</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>no</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[no]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>no</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>saidi_nomed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[saidi_nomed]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>saidi_nomed</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>saifi_nomed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[saifi_nomed]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>saifi_nomed</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>caidi_nomed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[caidi_nomed]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>caidi_nomed</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>circuits</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[circuits]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>circuits</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>voltage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[voltage]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>voltage</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nerc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nerc]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>nerc</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gen_mwh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gen_mwh]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>gen_mwh</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>purchase_mwh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[purchase_mwh]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>purchase_mwh</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ba</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ba]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>ba</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pv_mwh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pv_mwh]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>pv_mwh</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wind_mwh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wind_mwh]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>wind_mwh</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nm_mwh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nm_mwh]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>nm_mwh</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ee_mwh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ee_mwh]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>ee_mwh</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dem_res_customers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dem_res_customers]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>dem_res_customers</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dem_res_mwh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dem_res_mwh]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>dem_res_mwh</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pv_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pv_pct]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>pv_pct</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wind_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wind_pct]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>wind_pct</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nm_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nm_pct]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>nm_pct</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ee_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ee_pct]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>ee_pct</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dem_res_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dem_res_pct]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>dem_res_pct</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dem_res_cust_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dem_res_cust_pct]</local-name>
+            <parent-name>[df_19.csv]</parent-name>
+            <remote-alias>dem_res_cust_pct</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='df_19.csv' datatype='table' name='[__tableau_internal_object_id__].[df_19.csv_AD12AE44C39A49AE82E59471C424DE6A]' role='measure' type='quantitative' />
+      <column caption='Ba' datatype='string' name='[ba]' role='dimension' type='nominal' />
+      <column caption='Caidi Nomed' datatype='string' name='[caidi_nomed]' role='dimension' type='nominal' />
+      <column caption='Circuits' datatype='real' name='[circuits]' role='measure' type='quantitative' />
+      <column caption='Dem Res Cust Pct' datatype='real' name='[dem_res_cust_pct]' role='measure' type='quantitative' />
+      <column caption='Dem Res Customers' datatype='real' name='[dem_res_customers]' role='measure' type='quantitative' />
+      <column caption='Dem Res Mwh' datatype='real' name='[dem_res_mwh]' role='measure' type='quantitative' />
+      <column caption='Dem Res Pct' datatype='real' name='[dem_res_pct]' role='measure' type='quantitative' />
+      <column caption='Ee Mwh' datatype='real' name='[ee_mwh]' role='measure' type='quantitative' />
+      <column caption='Ee Pct' datatype='real' name='[ee_pct]' role='measure' type='quantitative' />
+      <column caption='Gen Mwh' datatype='real' name='[gen_mwh]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Nerc' datatype='string' name='[nerc]' role='dimension' type='nominal' />
+      <column caption='Nm Mwh' datatype='real' name='[nm_mwh]' role='measure' type='quantitative' />
+      <column caption='Nm Pct' datatype='real' name='[nm_pct]' role='measure' type='quantitative' />
+      <column caption='No' datatype='real' name='[no]' role='measure' type='quantitative' />
+      <column caption='Purchase Mwh' datatype='real' name='[purchase_mwh]' role='measure' type='quantitative' />
+      <column caption='Pv Mwh' datatype='real' name='[pv_mwh]' role='measure' type='quantitative' />
+      <column caption='Pv Pct' datatype='real' name='[pv_pct]' role='measure' type='quantitative' />
+      <column caption='Saidi Nomed' datatype='real' name='[saidi_nomed]' role='measure' type='quantitative' />
+      <column caption='Saifi Nomed' datatype='string' name='[saifi_nomed]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Cust' datatype='real' name='[total_cust]' role='measure' type='quantitative' />
+      <column caption='Total Mwh' datatype='real' name='[total_mwh]' role='measure' type='quantitative' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Voltage' datatype='real' name='[voltage]' role='measure' type='quantitative' />
+      <column caption='Wind Mwh' datatype='real' name='[wind_mwh]' role='measure' type='quantitative' />
+      <column caption='Wind Pct' datatype='real' name='[wind_pct]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='df_19.csv' id='df_19.csv_AD12AE44C39A49AE82E59471C424DE6A'>
+            <properties context=''>
+              <relation connection='textscan.1cf2rbt1nd8tp41cw2ruc1hvcirb' name='df_19.csv' table='[df_19#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='name' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='real' name='total_mwh' ordinal='2' />
+                  <column datatype='real' name='total_cust' ordinal='3' />
+                  <column datatype='real' name='no' ordinal='4' />
+                  <column datatype='string' name='type' ordinal='5' />
+                  <column datatype='real' name='saidi_nomed' ordinal='6' />
+                  <column datatype='string' name='saifi_nomed' ordinal='7' />
+                  <column datatype='string' name='caidi_nomed' ordinal='8' />
+                  <column datatype='real' name='circuits' ordinal='9' />
+                  <column datatype='real' name='voltage' ordinal='10' />
+                  <column datatype='string' name='nerc' ordinal='11' />
+                  <column datatype='real' name='gen_mwh' ordinal='12' />
+                  <column datatype='real' name='purchase_mwh' ordinal='13' />
+                  <column datatype='string' name='ba' ordinal='14' />
+                  <column datatype='real' name='pv_mwh' ordinal='15' />
+                  <column datatype='real' name='wind_mwh' ordinal='16' />
+                  <column datatype='real' name='nm_mwh' ordinal='17' />
+                  <column datatype='real' name='ee_mwh' ordinal='18' />
+                  <column datatype='real' name='dem_res_customers' ordinal='19' />
+                  <column datatype='real' name='dem_res_mwh' ordinal='20' />
+                  <column datatype='real' name='pv_pct' ordinal='21' />
+                  <column datatype='real' name='wind_pct' ordinal='22' />
+                  <column datatype='real' name='nm_pct' ordinal='23' />
+                  <column datatype='real' name='ee_pct' ordinal='24' />
+                  <column datatype='real' name='dem_res_pct' ordinal='25' />
+                  <column datatype='real' name='dem_res_cust_pct' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='df_19' name='federated.07gwikz1px4vus12k7ifm1x5802b' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.07gwikz1px4vus12k7ifm1x5802b'>
+            <column-instance column='[name]' derivation='Attribute' name='[attr:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[saidi_nomed]' derivation='Avg' name='[avg:saidi_nomed:qk]' pivot='key' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Saidi Nomed' datatype='real' name='[saidi_nomed]' role='measure' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07gwikz1px4vus12k7ifm1x5802b].[avg:saidi_nomed:qk]' />
+              <lod column='[federated.07gwikz1px4vus12k7ifm1x5802b].[attr:name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07gwikz1px4vus12k7ifm1x5802b].[none:type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{7FCEA720-EECF-48BA-BA11-A809B7DD1FBE}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07gwikz1px4vus12k7ifm1x5802b].[none:name:nk]</field>
+            <field>[federated.07gwikz1px4vus12k7ifm1x5802b].[none:state:nk]</field>
+            <field>[federated.07gwikz1px4vus12k7ifm1x5802b].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{99744968-DB26-4FAD-A732-CA5486C44C92}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='124' name='Sheet 1' width='184'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
