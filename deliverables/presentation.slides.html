@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>slides slides</title>
+<title>presentation slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13338,7 +13338,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Outcome">Outcome<a class="anchor-link" href="#Outcome">&#182;</a></h3><p>I chose SAIDI as my outcome variable because it had the most non-missing entries.</p>
+<h3 id="Outcome">Outcome<a class="anchor-link" href="#Outcome">&#182;</a></h3><p>I chose <strong>SAIDI</strong> as my outcome variable because it had the most non-missing entries.</p>
 
 </div>
 </div>
@@ -13465,13 +13465,32 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h1><h3 id="Experiment-1:">Experiment 1:<a class="anchor-link" href="#Experiment-1:">&#182;</a></h3><p>Negative $R^2$, yikes!</p>
-<h3 id="Experiment-2:">Experiment 2:<a class="anchor-link" href="#Experiment-2:">&#182;</a></h3><p>$R^2$ of 0.12</p>
-<h3 id="Experiment-3:">Experiment 3:<a class="anchor-link" href="#Experiment-3:">&#182;</a></h3><p>$R^2$ of 0.42</p>
+<h1 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h1><h3 id="Experiment-1:-Only-Created-Features,-Fill-NA-(2019)">Experiment 1: Only Created Features, Fill NA (2019)<a class="anchor-link" href="#Experiment-1:-Only-Created-Features,-Fill-NA-(2019)">&#182;</a></h3><p>$R^2$ of -0.005, yikes!</p>
+<h3 id="Experiment-2:-Created-Features-and-Controls,-Fill-NA-(2019)">Experiment 2: Created Features and Controls, Fill NA (2019)<a class="anchor-link" href="#Experiment-2:-Created-Features-and-Controls,-Fill-NA-(2019)">&#182;</a></h3><p>$R^2$ of 0.12</p>
+<h3 id="Experiment-3:-Created-Features-and-Controls,-Fill-NA-(2015-2019)">Experiment 3: Created Features and Controls, Fill NA (2015-2019)<a class="anchor-link" href="#Experiment-3:-Created-Features-and-Controls,-Fill-NA-(2015-2019)">&#182;</a></h3><p>$R^2$ of -0.69?!</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><font color='blue'><h3><b> Experiment 4: Created Features and Controls, Drop NA (2015-2019) </b></h3></font></p>
+<p>$R^2$ of 0.42</p>
 
 </div>
 </div>
 </div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>These are some of the most notable experiments I did, and when I say created features, sometimes the exact features I used changed.</p>
+
+</div>
+</div>
+</div>
+</aside><aside class="notes">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13487,11 +13506,11 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</aside></section><section>
+</aside></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h1><p><img src="./experiment_3_accuracy.png" alt="plot"></p>
+<h1 id="Results:-Predictive-Modelling">Results: Predictive Modelling<a class="anchor-link" href="#Results:-Predictive-Modelling">&#182;</a></h1><p><img src="./experiment_4_accuracy.png" alt="plot"></p>
 
 </div>
 </div>
@@ -13504,7 +13523,15 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</aside></section></section><section><section>
+</aside></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Results:-Feature-Importance">Results: Feature Importance<a class="anchor-link" href="#Results:-Feature-Importance">&#182;</a></h1><p><img src="./experiment_4_feature_importance.png" alt="plot"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13521,7 +13548,17 @@ a.anchor-link {
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There's a tradeoff between having skewed data and then having less data, so I need to figure out how to approach this. Also, i am wondering how to best visualize the results from my best model, which so far is a random forest, in a human interpretable way. I'm considering plotting a global surrogate model in a decision tree but open to ideas if anyone knows more about this.</p>
+
+</div>
+</div>
+</div>
+</aside></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13532,7 +13569,8 @@ a.anchor-link {
 
 </div>
 </div>
-</div></div></section></section><section><section>
+</div><aside class="notes">
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13543,7 +13581,8 @@ a.anchor-link {
 
 </div>
 </div>
-</div><aside class="notes">
+</div>
+</aside><aside class="notes">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13584,7 +13623,8 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</aside>
+</aside><aside class="notes">
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13594,6 +13634,8 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</aside><aside class="notes">
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13603,6 +13645,8 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</aside><aside class="notes">
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13612,19 +13656,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></section></section>
+</aside></div></section></section>
 </div>
 </div>
 
